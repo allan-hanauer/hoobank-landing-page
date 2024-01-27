@@ -1,11 +1,28 @@
+import styles from "./style.js";
 function App() {
   return (
-    <>
-    <div className="w-full h-20 flex justify-center items-center bg-red-900">
-    <h1 className="text-white font-bold font-poppins p-0 ml-10 text-5xl">Hello world</h1>
+    <div className="bg-primary w-full overflow-hidden h-full">
+      <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+        <div className={`${styles.boxWidth}`}>Navbar</div>
+      </div>
+
+      <div className={`bg-primary ${styles.flexStart}`}>
+        <div className={`${styles.boxWidth}`}>Hero</div>
+      </div>
+      <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
+        <div className={`${styles.boxWidth}`}>
+          Stats
+          Business
+          Billing
+          CarDeal
+          Testimonials
+          Clients
+          CTA
+          Footer
+          </div>
+      </div>
     </div>
-    </>
-  )
+  );
 }
 
-export default App
+export default App;
